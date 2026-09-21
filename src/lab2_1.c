@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /*
     Task:
     Write a function `int sum_to_n(int n)` that computes
@@ -12,17 +11,29 @@
 */
 
 int sum_to_n(int n) {
-    // TODO: implement sum with a for loop
-    return 0; // placeholder
+  // TODO: implement sum with a for loop
+  // placeholder
+
+  int sum = 0;
+  for (int i = 1; i <= n; i++) {
+    sum += i;
+  }
+  printf("Sum is: %d\n", sum);
+  return sum;
 }
 
 int main(void) {
-    int n;
+  int n;
 
-    printf("Enter a positive integer n: ");
+  printf("Enter a positive integer n: ");
+  scanf("%d", &n);
+  while (n < 1) {
+    printf("Too low. Your number must be at least 1.\n Enter a new integer: ");
     scanf("%d", &n);
+  }
+  sum_to_n(n);
 
-    // TODO: validate input, call function, and print result
+  // TODO: validate input, call function, and print result
 
-    return 0;
+  return 0;
 }
