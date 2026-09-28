@@ -1,3 +1,5 @@
+//Bora Akca student ID:241ADB117
+
 #include <stdio.h>
 
 /*
